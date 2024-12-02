@@ -1,0 +1,58 @@
+# Ignore everything inside dashboard-frontend/node_modules
+dashboard-frontend/node_modules/
+
+# Logs
+dashboard-frontend/*.log
+dashboard-frontend/npm-debug.log*
+dashboard-frontend/yarn-debug.log*
+dashboard-frontend/yarn-error.log*
+
+# Dependency directories
+dashboard-frontend/.pnp
+dashboard-frontend/.pnp.js
+
+# Environment variables
+dashboard-frontend/.env
+dashboard-frontend/.env.local
+dashboard-frontend/.env.development.local
+dashboard-frontend/.env.test.local
+dashboard-frontend/.env.production.local
+
+# Next.js build output
+dashboard-frontend/.next/
+dashboard-frontend/out/
+
+# Static generated files
+dashboard-frontend/public/static/
+
+# TypeScript
+dashboard-frontend/*.tsbuildinfo
+
+# Tailwind CSS
+dashboard-frontend/tailwind.config.js
+dashboard-frontend/tailwind.config.ts
+
+# Build artifacts
+dashboard-frontend/build/
+dashboard-frontend/dist/
+
+# VS Code settings
+dashboard-frontend/.vscode/
+
+# MacOS files
+.DS_Store
+
+# Windows thumbnail cache files
+Thumbs.db
+
+# IDE-specific files
+dashboard-frontend/.idea/
+dashboard-frontend/*.iml
+
+# ESLint and Prettier cache
+dashboard-frontend/.eslintcache
+dashboard-frontend/.prettierignore
+
+# Temporary and swap files
+dashboard-frontend/*.swp
+dashboard-frontend/*.swo
