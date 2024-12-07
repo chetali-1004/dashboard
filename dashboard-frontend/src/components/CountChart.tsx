@@ -1,11 +1,6 @@
 "use client";
-import React, { PureComponent } from "react";
-import {
-  RadialBarChart,
-  RadialBar,
-  Legend,
-  ResponsiveContainer,
-} from "recharts";
+import React from "react";
+import { RadialBarChart, RadialBar, ResponsiveContainer } from "recharts";
 import Image from "next/image";
 
 const data = [
