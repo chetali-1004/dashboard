@@ -10,6 +10,7 @@ const Navbar = () => {
           type="text"
           placeholder="Search..."
           className="w-[200px] p-2 bg-transparent outline-none"
+          suppressHydrationWarning
         />
       </div>
 
