@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import Image from "next/image";
@@ -30,10 +30,19 @@ const events = [
 ];
 
 const EventCalendar = () => {
-  const [value, onChange] = useState<Value>(new Date());
+  const [value, onChange] = useState<Value>(null);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    onChange(new Date());
+  }, []);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
   return (
     <div className="bg-white p-4 rounded-md">
-      <Calendar onChange={onChange} value={value} />
+      {isMounted && <Calendar onChange={onChange} value={value} />}
       <div className="flex items-center justify-between">
         <h1 className="text-xl font-semibold my-4">Events</h1>
         <Image src="/moreDark.png" alt="" width={20} height={20} />
