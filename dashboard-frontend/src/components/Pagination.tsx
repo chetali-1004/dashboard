@@ -1,8 +1,9 @@
 const Pagination = () => {
+  const isDisabled = false;
   return (
     <div className="p-4 items-center justify-between flex text-gray-500">
       <button
-        disabled
+        disabled={isDisabled}
         className="py-2 px-4 rounded-md bg-slate-200 text-xs font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
       >
         {" "}
